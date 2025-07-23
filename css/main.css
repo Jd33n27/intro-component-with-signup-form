@@ -23,3 +23,12 @@
   /* Font */
   --fonts-Poppins: "Poppins";
 }
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
