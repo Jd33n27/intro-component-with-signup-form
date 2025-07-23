@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="flex justify-center font-Poppins bg-[url(/images/bg-intro-mobile.png)] bg-cover bg-Red-400 bg-no-repeat md:bg-[url(/images/bg-intro-desktop.png)]"
+  >
+    <!-- main container -->
+    <section
+      class="container flex flex-col items-center mx-auto md:flex-row md:my-20"
+    >
+      <!-- Text-container -->
+      <div class="container flex flex-col text-center items-center md:px-24">
+        <!-- title -->
+        <h1
+          class="text-4xl text-white font-bold my-8 md:text-6xl md:text-start"
+        >
+          Learn to code by watching others
+        </h1>
+
+        <!-- Sub-title -->
+        <p class="text-xl text-white mx-4 md:text-2x md:text-start">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <!-- Form container -->
+      <div class="container flex flex-col items-center">
+        <!-- Try it Card button -->
+        <a href="#" class="">
+          <button
+            class="bg-Purple-700 text-white text-center text-xl rounded-lg py-6 px-12 mx-4 mt-6 shadow-lg shadow-Gray-900 cursor-pointer md:px-20 md:py-4"
+          >
+            <strong>Try it free 7 days </strong>then $20/mo. thereafter
+          </button>
+        </a>
+
+        <form
+          action=""
+          class="flex flex-col space-y-6 mx-4 mt-8 p-8 mb-8 bg-white rounded-lg"
+        >
+          <!-- First Name input -->
+          <input
+            type="text"
+            placeholder="First Name"
+            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+          />
+
+          <!-- Last Name input -->
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+          />
+
+          <!-- Email Address input -->
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+          />
+
+          <!-- Password input -->
+          <input
+            type="password"
+            placeholder="Password"
+            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+          />
+
+          <button
+            class="bg-Green-400 text-xl text-white uppercase font-semibold py-4 px-6 rounded-lg shadow-lg transition delay-150 duration-300 hover:bg-lightGreen cursor-pointer"
+          >
+            Claim your free trial
+          </button>
+
+          <p class="text-lightGray text-center">
+            By clicking the button, you are agreeing to our
+            <strong class="text-Red-400 cursor-pointer">
+              Terms and Services</strong
+            >
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
