@@ -32,3 +32,45 @@
   color: hsl(228, 45%, 44%);
   cursor: pointer;
 }
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-100%);
+  cursor: default;
+}
+
+.error-message-container {
+  display: none;
+  justify-content: right;
+}
+
+.error-message-container p {
+  color: var(--color-Red-400);
+  font-style: italic;
+}
+
+/* THE ERROR STATE --When the container gets the 'error' class...*/
+.input-container.error .error-icon {
+  display: block;
+}
+
+.input-container.error input {
+  border-color: var(--color-Red-400);
+  outline: none;
+}
+
+.error-message-container.error {
+  display: flex;
+}

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
+    <script defer src="./js/script.js"></script>
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body
@@ -52,37 +53,78 @@
 
         <form
           action=""
+          onsubmit=""
           class="flex flex-col space-y-6 mx-4 mt-8 p-8 mb-8 bg-white rounded-lg"
         >
           <!-- First Name input -->
-          <input
-            type="text"
-            placeholder="First Name"
-            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
-          />
+          <div class="input-container" id="input-container">
+            <input
+              type="text"
+              placeholder="First Name"
+              id="first-name"
+              class="font-bold w-full py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+            />
+            <span class="error-icon"
+              ><img src="./images/icon-error.svg" alt="error-icon"
+            /></span>
+            <!-- error message -->
+            <span class="error-message-container" id="error-message-container"
+              ><p>First name cannot be empty</p></span
+            >
+          </div>
 
           <!-- Last Name input -->
-          <input
-            type="text"
-            placeholder="Last Name"
-            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
-          />
+          <div class="input-container" id="input-container">
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="last-name"
+              class="font-bold w-full py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+            />
+            <span class="error-icon"
+              ><img src="./images/icon-error.svg" alt="error-icon"
+            /></span>
+            <!-- error message -->
+            <span class="error-message-container" id="error-message-container"
+              ><p>Last name cannot be empty</p></span
+            >
+          </div>
 
           <!-- Email Address input -->
-          <input
-            type="email"
-            placeholder="Email Address"
-            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
-          />
-
+          <div class="input-container" id="input-container">
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email-input"
+              class="font-bold w-full py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+            />
+            <span class="error-icon"
+              ><img src="./images/icon-error.svg" alt="error-icon"
+            /></span>
+            <!-- error message -->
+            <span class="error-message-container" id="error-message-container"
+              ><p>Looks like this is not an email</p></span
+            >
+          </div>
           <!-- Password input -->
-          <input
-            type="password"
-            placeholder="Password"
-            class="font-bold py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
-          />
+          <div class="input-container" id="input-container">
+            <input
+              type="password"
+              placeholder="Password"
+              id="password-input"
+              class="font-bold w-full py-4 px-4 border-2 border-lightGray rounded-lg placeholder:text-gray-600 placeholder:font-bold focus:outline-Purple-350"
+            />
+            <span class="error-icon"
+              ><img src="./images/icon-error.svg" alt="error-icon"
+            /></span>
+            <!-- error message -->
+            <span class="error-message-container" id="error-message-container"
+              ><p>Password cannot be empty</p></span
+            >
+          </div>
 
           <button
+            id="submit-button"
             class="bg-Green-400 text-xl text-white uppercase font-semibold py-4 px-6 rounded-lg shadow-lg transition delay-150 duration-300 hover:bg-lightGreen cursor-pointer"
           >
             Claim your free trial
